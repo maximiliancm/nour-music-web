@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="examples.css" media="all" /> -->
+    <title>infiniteSong</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" alt="jelly" src="images/rhinojellyrender1.png" width="500">. 
+        </div>
+
+        <!-- <br/>
+        <br/>
+        <a href="index.html"><- Return to menu</a>
+        <br/>
+        <br/> -->
+        <strong>infinite music demo</strong><br/>
+      
+        <br/>
+        <p class="clickscreen">Click or touch screen to unmute audio</p>
+        <br/>
+        <button id="randomSongButton" onclick="RestartRandomSong();" disabled>RandomSong</button>
+        <br/>
+
+        <button id="stopButton" onclick="stopEvent();" disabled>Stop</button>
+
+        <div class="bottominfo">
+            <output id="display_out">Please wait... Loading...</output><br/>
+            <br/>
+            <output id="display_out2"></output><br/>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="fmodstudio.js"></script>
+    <script type="text/javascript" src="event_parameter.js"></script>
+</body>
+</html>
