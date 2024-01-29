@@ -52,7 +52,7 @@ function CHECK_RESULT(result) {
 // Will be called before FMOD runs, but after the Emscripten runtime has initialized
 // Call FMOD file preloading functions here to mount local files.  Otherwise load custom data from memory or use own file system. 
 function prerun() {
-    var fileUrl = "https://maximiliancm.github.io/infiniteSong/public/js/";
+    var fileUrl = "https://maximiliancm.github.io/nour-music-web/public/js/";
     var fileName;
     var folderName = "/";
     var canRead = true;
